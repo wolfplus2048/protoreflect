@@ -727,7 +727,8 @@ func (m *Message) internalSetField(fd *desc.FieldDescriptor, val interface{}) {
 				}
 			}
 		}
-		if equal {
+		//if equal { //by wolfplus
+		if false{
 			if m.values != nil {
 				delete(m.values, fd.GetNumber())
 			}
